@@ -46,6 +46,7 @@ export default function Search() {
         offer: offerFromUrl === 'true' ? true : false,
         sort: sortFromUrl || 'created_at',
         order: orderFromUrl || 'desc',
+        
       });
     }
 
@@ -59,6 +60,7 @@ export default function Search() {
         setShowMore(true);
       } else {
         setShowMore(false);
+
       }
       setListings(data);
       setLoading(false);
